@@ -1,0 +1,279 @@
+:root {
+    --yellow: #f9d71c;  
+    --red:#EB212E;
+    --darkRed:#AB1822;
+    --green:#2FF923;
+    --darkGreen:#167A11;
+  }
+
+@font-face {
+    font-family: "Star Wars";
+    src: url('fonts/starwars.ttf');
+}
+
+button{
+    font-family: "Star Wars";
+    cursor: pointer;
+}
+
+body {
+    background-color: black;
+    margin:0;
+    letter-spacing: 2px;;
+}
+
+#container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#buttonsDiv{
+    display:flex; 
+    width:60vw;  
+}
+
+#results{
+  color: var(--yellow);
+  font-size: 20px;;
+}
+
+.key{
+    flex:1;
+    height:60px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin:5px;
+    background-color: var(--yellow);
+    border-style: none;
+    font-size: 20px;;
+}
+
+.key:hover{
+    background-color: black;
+    color:var(--yellow);
+    border:1px solid var(--yellow);   
+}
+
+#header{
+    flex-wrap: wrap;
+    width:60vw;
+    margin-top:50px;
+    display:flex;
+    justify-content: space-around;    
+}
+
+.headerDiv{
+    margin:10px;
+    display: flex; 
+}
+
+#divTable{
+    width:95vw;
+    display: flex;
+    justify-content: center;
+    background-color:black;
+}
+
+#table {
+    background-color:black;
+    display:flex;
+    flex-direction: column;  
+    width: 70vw;
+    border-radius: 30px;
+    color:var(--yellow)
+}
+
+.paginationDiv{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+.row{
+    display:flex;
+    
+}
+
+.rowDiv{
+    margin:10px; 
+    display: flex;
+}
+
+.actions{  
+    display:flex;
+    background-color:black;
+    text-align: center;
+}
+
+.actions button{
+    flex:1;
+    border-radius: 10px;
+}
+
+.divLeft{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.actions div{
+    display:flex;
+    flex:1;
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+.actionsTh{
+    text-align: center;
+}
+
+tr{
+    display:flex;
+    justify-content:space-between;  
+}
+
+.divExtend{
+    flex:1.2;
+    display:flex
+}
+
+td{
+    text-align: start;
+    min-height:5vh;
+    flex:1;
+    word-break: break-word;
+    margin-left: 5px;
+    font-size: 16px; 
+    padding-left: 5px;
+    
+}
+
+.spanBetweenPagination{
+    color:var(--yellow);
+    margin: 0 20px 0 20px;
+    font-size:38px;
+}
+
+th{ 
+    word-break: break-word;
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: 1px solid var(--yellow);
+    margin-bottom: 10px;
+    min-height:5vh ;
+}
+
+.buttonExpand{
+    background-color: #2FF923;
+    flex:1;
+    border-style: none;
+    border-radius: 10px;
+    margin:2px;
+}
+
+table.tableExtend{
+    background-color:var(--yellow);
+    flex:1   
+}
+
+.buttonDelete{
+    background-color: var(--red);
+    flex:1;
+    border-style: none;
+    border-radius: 10px;
+    margin:2px;
+}
+
+.buttonDelete:hover{
+    background-color: var(--darkRed)  
+}
+
+.buttonExpand:hover{
+    background-color: var(--darkGreen)
+}
+
+.id{
+    flex:0.15;  
+}
+
+.created{
+    flex:0.4
+}
+
+.removeArea{
+    display:flex;
+    flex-direction: column;
+    font-size: 10px;
+    text-align: center;
+}  
+
+.removeArea div{
+    flex:1
+}
+
+.no{
+   background-color: var(--red);
+}
+
+.yes{
+    flex:1;
+    background-color:var(--green)  
+ }
+
+.no:hover{
+    background-color: var(--darkRed);
+}
+
+.yes:hover{
+     flex:1;
+     background-color:var(--darkGreen)
+}
+
+.closeButton div{
+    font-weight: 700;
+    text-transform: capitalize;
+    
+}
+.closeButton:hover{
+    background-color: var(--red)
+}
+
+.closeButton{ 
+    background-color: black;
+    border:1px solid var(--yellow);
+    color:var(--yellow);   
+}
+
+img{
+    margin:50px;
+}
+
+.paginationDiv button{
+    font-size:18px;
+    padding:10px;
+    color:black;
+    background-color:var(--yellow);
+    border:1px solid black;
+}
+
+.paginationDiv button:hover{
+    color:var(--yellow);
+    background-color:black;
+    border:1px solid var(--yellow);
+}
+
+.tableExtend th{
+    border:1px solid black
+}
+
+.tableExtend td{
+    background-color: var(--yellow);
+}
+
+
